@@ -47,7 +47,7 @@ const server = http.createServer(async (req, res) => {
             const message = parsedBody.split('=')[1];
             await writeFile(`contact/message - ${ Date.now().toString() }.txt`, message);
             res.statusCode = 302;
-            res.setHeader('Location', '/');
+            res.setHeader('Location', '/dziekujemy');
             return res.end();
         })
     }
