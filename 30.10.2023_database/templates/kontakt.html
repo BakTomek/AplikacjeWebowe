@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kontakt</h1>
+    <form method="post" action="" id="form1">
+        <label>Imię:
+            <input type="text" name="imie">
+        </label><br>
+        <label>E-mail:
+            <input type="email" name="email">
+        </label><br>
+        <label>Temat:
+            <select name="temat">
+                <option value="pomoc">Pomoc</option>
+                <option value="marketing">Marketing</option>
+                <option value="pytania">Pytania</option>
+            </select>
+        </label><br>
+        <label>Treść wiadomości:
+            <textarea name="tresc" rows="10" cols="100"></textarea>
+        </label><br>
+        <input type="submit" value="Prześlij">
+    </form>
+    <script type="application/javascript" src="static/form.js"></script>
+</body>
+</html>
